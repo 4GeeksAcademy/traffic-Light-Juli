@@ -4,17 +4,6 @@ const TrafficLight = () => {
   const [color, setColor] = useState("red");
   const [showPurple, setShowPurple] = useState(false);
 
-  const generateColor = () => {
-    const hexColors = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += hexColors[Math.floor(Math.random() * hexColors.length)];
-    }
-    return color;
-  };
-
-  console.log(generateColor());
-
   return (
     <div className="d-flex flex-column justify-content-start align-items-center"
       style={{top: 0, position: "fixed", width: "100vw", height: "100vh", backgroundColor: "#5261b3",}}>
